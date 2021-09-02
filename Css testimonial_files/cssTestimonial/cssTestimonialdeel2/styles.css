@@ -1,0 +1,150 @@
+body {
+  background-color: #c3cfe2;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5px;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.box {
+  padding: 10px;
+}
+
+.box:hover {
+  animation: fadeOut ease 10s;
+  -webkit-animation: fadeOut ease 10s;
+  -moz-animation: fadeOut ease 10s;
+  -o-animation: fadeOut ease 10s;
+  -ms-animation: fadeOut ease 10s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  flex-grow: 4;
+}
+
+.links {
+  right: 0px;
+  bottom: 150px;
+  position: absolute;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 228px;
+}
+
+li {
+  width: 228px;
+  height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: right 250ms ease-in-out;
+  position: absolute;
+  right: -155px;
+}
+
+li:hover {
+  right: 0px;
+}
+
+a {
+  color: white;
+}
+
+i {
+  font-size: 22px;
+  color: white;
+  padding-left: 25px;
+  margin-right: 25px;
+}
+
+.fa-laptop-code {
+  padding-left: 19px;
+}
+
+.blog {
+  background-color: #e17b77;
+  top: 0px;
+}
+
+.twitter {
+  background-color: #007bb6;
+  top: 45px;
+}
+
+.linkedin {
+  background-color: #00aced;
+  top: 90px;
+}
+
+.fb {
+  background-color: #3b5998;
+  top: 135px;
+}
+
+.github {
+  background-color: #333;
+  top: 180px;
+}
