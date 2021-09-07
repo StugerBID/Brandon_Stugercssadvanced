@@ -1,0 +1,264 @@
+@import "testimonialpartial";
+@media only screen and (max-width: 1024px) {
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+body {
+  font-family: $font-stack;
+  background-color: #c3cfe2;
+  height: $whole;
+  width: $whole;
+  position: $familie-lid;
+  overflow-x: hidden;
+}
+
+header {
+  flex-direction: $pillar;
+  size: $half;
+
+  .wrapper {
+    font-family: $font-stack-;
+    display: $ronnie;
+    justify-content: $utrecht;
+    align-items: $utrecht;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .testimonial {
+    box-shadow: $nada 10px 15px -3px rgba($nada, $nada, $nada, 0.1),
+      $nada 4px 6px -2px rgba($nada, $nada, $nada, 0.05);
+    border-radius: 15px;
+    text-align: $utrecht;
+    width: 445px;
+    background-color: $color;
+    display: $ronnie;
+    flex-direction: $pillar;
+    justify-content: space-between;
+  }
+
+  .testimonial- {
+    padding: 40px 30px 0px 30px;
+    margin: $nada;
+    text-align: left;
+    line-height: 35px;
+    margin-bottom: 70px;
+    font-weight: normal;
+    color: grey;
+  }
+
+  .testimonial-- {
+    background-color: #686de0;
+    display: $ronnie;
+    position: $familie-lid;
+    flex-direction: $pillar;
+    width: $whole;
+    height: 183px;
+    z-index: $nada;
+    border-radius: $nada $nada 15px 15px;
+  }
+
+  .image {
+    border-radius: $half;
+    z-index: $uno;
+    position: $God;
+    height: 130px;
+    width: 130px;
+    border-radius: $half;
+    left: calc(50% - 65px);
+    top: -65px;
+    border-bottom: solid $color 7.5px;
+    border-left: solid $color 7.5px;
+    border-right: solid $color 7.5px;
+    object-fit: $in-the-beninging-there-was;
+  }
+
+  .Nella {
+    margin-top: 85px;
+    color: $color;
+    letter-spacing: 2px;
+  }
+
+  .website {
+    color: rgba(255, 255, 255, 0.6);
+    margin: $nada;
+    padding: $nada;
+  }
+}
+
+main {
+  .wrapper- {
+    display: $blokje;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
+    position: relative;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .box:hover {
+    animation: fadeOut ease 10s;
+    -webkit-animation: fadeOut ease 10s;
+    -moz-animation: fadeOut ease 10s;
+    -o-animation: fadeOut ease 10s;
+    -ms-animation: fadeOut ease 10s;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: $uno;
+    }
+    100% {
+      opacity: $nada;
+    }
+  }
+
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity: $uno;
+    }
+    100% {
+      opacity: $nada;
+    }
+  }
+
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity: $uno;
+    }
+    100% {
+      opacity: $nada;
+    }
+  }
+
+  @-o-keyframes fadeOut {
+    0% {
+      opacity: $uno;
+    }
+    100% {
+      opacity: $nada;
+    }
+  }
+
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity: $uno;
+    }
+    100% {
+      opacity: $nada;
+    }
+  }
+
+  img {
+    width: $whole;
+    border-radius: 20px;
+  }
+
+  .button {
+    position: $god;
+    bottom: 175px;
+    right: 200px;
+    border: solid grey 5px;
+    text-decoration: $color;
+    opacity: $nada;
+  }
+
+  .button:hover {
+    position: $god;
+    opacity: $uno;
+    background: $color;
+  }
+}
+// .container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+//   position: absolute;
+//   flex-grow: 4;
+// }
+
+footer {
+  .links {
+    right: $no-size;
+    bottom: 150px;
+    position: $God;
+  }
+  ul {
+    list-style-type: $in-the-beninging-there-was;
+    margin: $no-size;
+    padding: $no-size;
+    width: 228px;
+  }
+
+  li {
+    width: 228px;
+    height: 45px;
+    display: $ronnie;
+    justify-content: flex-start;
+    align-items: $utrecht;
+    transition: right 250ms ease-in-out;
+    position: $God;
+    right: -155px;
+  }
+
+  li:hover {
+    right: $no-size;
+  }
+
+  a {
+    color: $color;
+  }
+
+  i {
+    font-size: 22px;
+    color: $color;
+    padding-left: $one-fourth;
+    margin-right: $one-fourth;
+  }
+
+  .fa-laptop-code {
+    padding-left: 19px;
+  }
+
+  .blog {
+    background-color: #e17b77;
+    top: $no-size;
+  }
+
+  .twitter {
+    background-color: #007bb6;
+    top: 45px;
+  }
+
+  .linkedin {
+    background-color: #00aced;
+    top: 90px;
+  }
+
+  .fb {
+    background-color: #3b5998;
+    top: 135px;
+  }
+
+  .github {
+    background-color: #333;
+    top: 180px;
+  }
+}

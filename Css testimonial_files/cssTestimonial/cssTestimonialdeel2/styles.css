@@ -1,3 +1,81 @@
+html {
+  background-color: #c3cfe2;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  flex-direction: column;
+  size: 50%;
+}
+
+.wrapper {
+  font-family: "Cousine", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.testimonial {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  text-align: center;
+  width: 445px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-text {
+  padding: 40px 30px 0px 30px;
+  margin: 0;
+  text-align: left;
+  line-height: 35px;
+  margin-bottom: 70px;
+  font-weight: normal;
+  color: grey;
+}
+
+.image {
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  left: calc(50% - 65px);
+  top: -65px;
+  border-bottom: solid white 7.5px;
+  border-left: solid white 7.5px;
+  border-right: solid white 7.5px;
+  object-fit: none;
+}
+
+.Nella {
+  margin-top: 85px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.website {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial-footer {
+  background-color: #686de0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 183px;
+  z-index: 0;
+  border-radius: 0 0 15px 15px;
+}
+
 body {
   background-color: #c3cfe2;
   height: 100%;
@@ -6,28 +84,51 @@ body {
   overflow-x: hidden;
 }
 
-.wrapper {
+.wrapper- {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 5px;
+  position: relative;
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: #c3cfe2;
 }
 
 img {
   width: 100%;
   border-radius: 20px;
+  opacity: 1;
 }
 
-.box {
-  padding: 10px;
+img:hover {
+  animation: fadeOut ease 5s;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s;
+  -ms-animation: fadeOut ease 5s;
+  opacity: 0;
+  background: grey;
 }
 
-.box:hover {
-  animation: fadeOut ease 10s;
-  -webkit-animation: fadeOut ease 10s;
-  -moz-animation: fadeOut ease 10s;
-  -o-animation: fadeOut ease 10s;
-  -ms-animation: fadeOut ease 10s;
+.button {
+  position: absolute;
+  bottom: 175px;
+  right: 200px;
+  border: solid grey 5px;
+  text-decoration: white;
+  opacity: 0;
 }
+
+.button:hover {
+  position: absolute;
+  opacity: 1;
+  background: grey;
+}
+
 @keyframes fadeOut {
   0% {
     opacity: 1;
